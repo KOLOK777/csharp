@@ -4,22 +4,14 @@
 //-3 -> нет
 //7 -> нет
 
-Console.Writeline("Введите первое число")
-int number1 = convert.ToInt(Console.ReadLine())
-Console.Writeline("Введите второе число")
-int number2 = convert.ToInt(Console.ReadLine())
+Console.Writeline("Введите число")
+int number = convert.ToInt32(Console.ReadLine())
 
-if (number1 == number2)
+if (number%2 == 0)
 {
-Console.Writeline("числа одинаковые !")
+    Console.Writeline("число четное")
 }
-    if (number1 > number2) 
+else 
 {
-        Console.Writeline("бОльшее число: " + number1)
-        Console.Writeline("мЕньшее число: " + number2)
-}
-    else 
-{
-        Console.Writeline("бОльшее число: " + number2)
-        Console.Writeline("мЕньшее число: " + number1)
+    Console.Writeline("число нечетное")
 }

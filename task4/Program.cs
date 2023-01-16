@@ -8,6 +8,11 @@ Console.Writeline("Введите первое число")
 int number1 = convert.ToInt(Console.ReadLine())
 Console.Writeline("Введите второе число")
 int number2 = convert.ToInt(Console.ReadLine())
+Console.Writeline("Введите третье число")
+int number3 = convert.ToInt(Console.ReadLine())
+int max = number1
+
+
 
 if (number1 == number2)
 {

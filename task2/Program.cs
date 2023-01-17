@@ -4,22 +4,22 @@
 //a = 2 b = 10 -> max = 10
 //a = -9 b = -3 -> max = -3
 
-Console.Writeline("Введите первое число")
-int number1 = convert.ToInt(Console.ReadLine())
-Console.Writeline("Введите второе число")
-int number2 = convert.ToInt(Console.ReadLine())
+Console.WriteLine("Введите первое число");
+int number1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите второе число");
+int number2 = Convert.ToInt32(Console.ReadLine());
 
 if (number1 == number2)
 {
-Console.Writeline("числа одинаковые !")
+Console.WriteLine("числа одинаковые !");
 }
     if (number1 > number2) 
 {
-        Console.Writeline("бОльшее число: " + number1)
-        Console.Writeline("мЕньшее число: " + number2)
+        Console.WriteLine("бОльшее число: " + number1);
+        Console.WriteLine("мЕньшее число: " + number2);
 }
     else 
 {
-        Console.Writeline("бОльшее число: " + number2)
-        Console.Writeline("мЕньшее число: " + number1)
+        Console.WriteLine("бОльшее число: " + number2);
+        Console.WriteLine("мЕньшее число: " + number1);
 }

@@ -12,17 +12,13 @@ Console.WriteLine("Введите третье число");
 int number3 = int.Parse(Console.ReadLine());
 int max = number1;
 
-if (number1 == number2)
+if (number2 >= max) 
 {
-Console.WriteLine("числа одинаковые !");
+    max = number2;   
 }
-    if (number1 > number2) 
+if (number3 >= max) 
 {
-        Console.WriteLine("бОльшее число: " + number1);
-        Console.WriteLine("мЕньшее число: " + number2);
+    max = number3;   
 }
-    else 
-{
-        Console.WriteLine("бОльшее число: " + number2);
-        Console.WriteLine("мЕньшее число: " + number1);
-}
+
+Console.WriteLine("Максимальное число: " + max);

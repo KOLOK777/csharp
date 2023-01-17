@@ -3,18 +3,18 @@
 //5 -> 2, 4
 //8 -> 2, 4, 6, 8
 
-Console.Writeline("Введите число N ")
-int N = convert.ToInt32(Console.ReadLine())
-count = 4
+Console.WriteLine("Введите число N ");
+int N = int.Parse(Console.ReadLine());
+int count = 4;
 
-if (N=1)
+if (N == 1)
 {
-Console.Writeline("В промежутке нет четных чисел !")    
+Console.WriteLine("В промежутке нет четных чисел !");    
 }
 else
-    Console.Writeline(count-2)
+    Console.Write(count-2);
     while (count <= N)
     {
-        Console.Writeline(", " count)
+        Console.Write(", " + count);
     }
-    count = count + 2
+    count = count + 2;

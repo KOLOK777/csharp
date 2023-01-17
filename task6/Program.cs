@@ -4,14 +4,14 @@
 //-3 -> нет
 //7 -> нет
 
-Console.Writeline("Введите число");
-int number = convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите число");
+int number = int.Parse(Console.ReadLine());
 
 if (number%2 == 0)
 {
-    Console.Writeline("число четное");
+    Console.WriteLine("число четное");
 }
 else 
 {
-    Console.Writeline("число нечетное");
+    Console.WriteLine("число нечетное");
 }

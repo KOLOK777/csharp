@@ -7,13 +7,11 @@
 Console.WriteLine("Введите трехзначное число"); 
 int number = Convert.ToInt32(Console.ReadLine());
 
-while (number >= 1000 || number <= -1000 || (number >= -99 && number <= 99))
-    {
-    Console.WriteLine("Вы ввели неправильное число. Введите трехзначное число");
-    }
+//while (number >= 1000 || number <= -1000 || (number >= -99 && number <= 99))
+  //  {
+    //Console.WriteLine("Вы ввели неправильное число. Введите трехзначное число");
+    //}
 int digit = number / 10;
-int digit = digit % 10;
+digit = digit % 10;
 
-Console.WriteLine(digit);
-
-
+Console.WriteLine("Вторая цифра: " + digit);

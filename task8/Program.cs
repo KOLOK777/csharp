@@ -16,5 +16,5 @@ else
     while (count <= N)
     {
         Console.Write(", " + count);
+        count = count + 2;
     }
-    count = count + 2;

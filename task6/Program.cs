@@ -7,7 +7,7 @@
 Console.Writeline("Введите число");
 int number = convert.ToInt32(Console.ReadLine());
 
-if (number%2 == 0);
+if (number%2 == 0)
 {
     Console.Writeline("число четное");
 }

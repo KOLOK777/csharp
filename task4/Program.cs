@@ -4,27 +4,25 @@
 //44 5 78 -> 78
 //22 3 9 -> 22
 
-Console.Writeline("Введите первое число")
-int number1 = convert.ToInt(Console.ReadLine())
-Console.Writeline("Введите второе число")
-int number2 = convert.ToInt(Console.ReadLine())
-Console.Writeline("Введите третье число")
-int number3 = convert.ToInt(Console.ReadLine())
-int max = number1
-
-
+Console.WriteLine("Введите первое число");
+int number1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите второе число");
+int number2 = int.Parse(Console.ReadLine());
+Console.WriteLine("Введите третье число");
+int number3 = int.Parse(Console.ReadLine());
+int max = number1;
 
 if (number1 == number2)
 {
-Console.Writeline("числа одинаковые !")
+Console.WriteLine("числа одинаковые !");
 }
     if (number1 > number2) 
 {
-        Console.Writeline("бОльшее число: " + number1)
-        Console.Writeline("мЕньшее число: " + number2)
+        Console.WriteLine("бОльшее число: " + number1);
+        Console.WriteLine("мЕньшее число: " + number2);
 }
     else 
 {
-        Console.Writeline("бОльшее число: " + number2)
-        Console.Writeline("мЕньшее число: " + number1)
+        Console.WriteLine("бОльшее число: " + number2);
+        Console.WriteLine("мЕньшее число: " + number1);
 }

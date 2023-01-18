@@ -28,7 +28,6 @@ if (N > 1)
     count = count + 2;
     }
 if (N < -2)
-    helpN = N;
     if (N % 2 !=0)
         {
         helpN = N + 1;

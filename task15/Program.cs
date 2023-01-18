@@ -5,7 +5,11 @@
 //1 -> нет
 
 Console.WriteLine("Введите цифру, обозначающую день недели");
-int number = Convert.ToInt32(Console.ReadLine());
+int number;
+while (!Int32.TryParse(Console.ReadLine(), out number))
+    {   
+    Console.WriteLine("Ввdод неверный. Пожалуйста, введите корректное число");
+    }
 
 if (number > 7 || number < 1)
     Console.WriteLine("Вы ввели неверный номер");

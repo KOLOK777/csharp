@@ -5,15 +5,16 @@
 
 Console.WriteLine("Введите число");
 int number = Convert.ToInt32(Console.ReadLine());
-int bit = 1000;
+int hepNumber = number;
 
 if (number < 100 && number > -100)
 {
     Console.WriteLine("Третьей цифры нет");
 }
-while (number / bit == 0)
-        bit = bit * 10;
-        
+else 
+    while (helpNumber < 1000)
+        helpNumber = helpNumber / 10;
+
 Console.WriteLine(bit);
-int digit = number % (bit / 100);       
-Console.WriteLine(digit);
+int helpNumber = helpNumber % 100;       
+Console.WriteLine(helpNumber);

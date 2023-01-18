@@ -17,7 +17,7 @@ if (number < 100 && number > -100)
 }
 else 
 {
-    while (helpNumber > 1000 || helpNumber < -1000)
+    while (helpNumber >= 1000 || helpNumber <= -1000)
     {
         helpNumber = helpNumber / 10;
     }

@@ -4,7 +4,11 @@
 //32679 -> 6
 
 Console.WriteLine("Введите число");
-int number = Convert.ToInt32(Console.ReadLine());
+int number;
+while (!Int32.TryParse(Console.ReadLine(), out number))
+    {   
+    Console.WriteLine("Ввdод неверный. Пожалуйста, введите корректное число");
+    }
 int helpNumber = number;
 
 if (number < 100 && number > -100)
@@ -13,10 +17,10 @@ if (number < 100 && number > -100)
 }
 else 
 {
-    while (helpNumber > 1000)
+    while (helpNumber > 1000 || helpNumber < -1000)
     {
         helpNumber = helpNumber / 10;
     }
     helpNumber = helpNumber % 10;       
-    Console.WriteLine("Третья цифра в вашем числе (" + number + ") - " + helpNumber);
+    Console.WriteLine("Третья цифра в вашем числе (" + number + ") : " + Math.Abs(helpNumber));
 }

@@ -3,13 +3,15 @@
 //5 -> 2, 4
 //8 -> 2, 4, 6, 8
 
-Console.WriteLine("Введите число N ");
+Console.Write("Введите число N (больше 1): ");
 int N = int.Parse(Console.ReadLine());
 int count = 4;
 
-if (N == 1)
+Console.WriteLine("ИТОГ:");
+
+if (N <= 1)
 {
-Console.WriteLine("В промежутке нет четных чисел !");    
+Console.WriteLine("в промежутке нет четных чисел !");    
 }
 else
     Console.Write(count-2);

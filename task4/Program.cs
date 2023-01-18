@@ -5,11 +5,24 @@
 //22 3 9 -> 22
 
 Console.WriteLine("Введите первое число");
-int number1 = int.Parse(Console.ReadLine());
+int number1;
+while (!Int32.TryParse(Console.ReadLine(), out number1))
+{   
+    Console.WriteLine("Ввод неверный. Пожалуйста, введите корректное число");
+}
 Console.WriteLine("Введите второе число");
-int number2 = int.Parse(Console.ReadLine());
+int number2;
+while (!Int32.TryParse(Console.ReadLine(), out number2))
+{   
+    Console.WriteLine("Ввод неверный. Пожалуйста, введите корректное число");
+}
 Console.WriteLine("Введите третье число");
-int number3 = int.Parse(Console.ReadLine());
+int number3;
+while (!Int32.TryParse(Console.ReadLine(), out number3))
+{   
+    Console.WriteLine("Ввод неверный. Пожалуйста, введите корректное число");
+}
+
 int max = number1;
 
 if (number2 >= max) 

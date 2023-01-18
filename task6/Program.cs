@@ -5,9 +5,13 @@
 //7 -> нет
 
 Console.WriteLine("Введите число");
-int number = int.Parse(Console.ReadLine());
+int number;
+while (!Int32.TryParse(Console.ReadLine(), out number))
+{   
+    Console.WriteLine("Ввод неверный. Пожалуйста, введите корректное число");
+}
 
-if (number%2 == 0)
+if (number % 2 == 0)
 {
     Console.WriteLine("число четное");
 }

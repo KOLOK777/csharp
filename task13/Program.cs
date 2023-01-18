@@ -9,12 +9,14 @@ int helpNumber = number;
 
 if (number < 100 && number > -100)
 {
-    Console.WriteLine("В вашем числе (" + number + ") третьей цифры нет"
+    Console.WriteLine("В вашем числе (" + number + ") третьей цифры нет");
 }
-while (helpNumber < 1000)
+else 
 {
-    helpNumber = helpNumber / 10;
-    Console.WriteLine(helpNumber);
+    while (helpNumber > 1000)
+    {
+        helpNumber = helpNumber / 10;
+    }
+    helpNumber = helpNumber % 10;       
+    Console.WriteLine("Третья цифра в вашем числе (" + number + ") - " + helpNumber);
 }
-helpNumber = helpNumber % 100;       
-Console.WriteLine("Третья цифра в вашем числе (" + number + ") - " + helpNumber);

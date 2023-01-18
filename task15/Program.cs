@@ -6,14 +6,11 @@
 
 Console.WriteLine("Введите цифру, обозначающую день недели");
 int number;
-while (!Int32.TryParse(Console.ReadLine(), out number))
-    {   
+while (!Int32.TryParse(Console.ReadLine(), out number) || number > 7 || number < 1)
+    {
     Console.WriteLine("Ввdод неверный. Пожалуйста, введите корректное число");
     }
-
-if (number > 7 || number < 1)
-    Console.WriteLine("Вы ввели неверный номер");
-else if (number == 6 || number == 7)
-        Console.WriteLine("Это выходной день !");
-    else
-        Console.WriteLine("Это рабочий день !");
+if (number == 6 || number == 7)
+    Console.WriteLine("Это выходной день !");
+else
+    Console.WriteLine("Это рабочий день !");

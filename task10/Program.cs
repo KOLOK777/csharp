@@ -8,16 +8,16 @@ Console.WriteLine("Введите трехзначное число");
 int number;
 while (!Int32.TryParse(Console.ReadLine(), out number))
     {   
-    Console.WriteLine("Ввод неверный. Пожалуйста, введите корректное число");
+    Console.WriteLine("Ввdод неверный. Пожалуйста, введите корректное число");
     }
 
 if (number >= 1000 || number <= -1000 || (number >= -99 && number <= 99))
-{
+  {
   Console.WriteLine("Вы ввели не трехзначное число !");
-}
-else 
-{
+  }
+else
+  {
   int digit = number / 10;
   digit = digit % 10;
-  Console.WriteLine("Вторая цифра: " + digit);
-}
+  Console.WriteLine("Вторая цифра: " + Math.Abs(digit));
+  }

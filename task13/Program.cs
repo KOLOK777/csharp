@@ -5,15 +5,16 @@
 
 Console.WriteLine("Введите число");
 int number = Convert.ToInt32(Console.ReadLine());
-int hepNumber = number;
+int helpNumber = number;
 
 if (number < 100 && number > -100)
 {
-    Console.WriteLine("Третьей цифры нет");
+    Console.WriteLine("В вашем числе (" + number + ") третьей цифры нет"
 }
-else 
-    while (helpNumber < 1000)
-        helpNumber = helpNumber / 10;
-
-int helpNumber = helpNumber % 100;       
-Console.WriteLine(helpNumber);
+while (helpNumber < 1000)
+{
+    helpNumber = helpNumber / 10;
+    Console.WriteLine(helpNumber);
+}
+helpNumber = helpNumber % 100;       
+Console.WriteLine("Третья цифра в вашем числе (" + number + ") - " + helpNumber);

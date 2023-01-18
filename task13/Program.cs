@@ -15,6 +15,5 @@ else
     while (helpNumber < 1000)
         helpNumber = helpNumber / 10;
 
-Console.WriteLine(bit);
 int helpNumber = helpNumber % 100;       
 Console.WriteLine(helpNumber);

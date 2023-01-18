@@ -5,7 +5,11 @@
 //918 -> 1
 
 Console.WriteLine("Введите трехзначное число"); 
-int number = Convert.ToInt32(Console.ReadLine());
+int number;
+while (!Int32.TryParse(Console.ReadLine(), out number))
+    {   
+    Console.WriteLine("Ввод неверный. Пожалуйста, введите корректное число");
+    }
 
 if (number >= 1000 || number <= -1000 || (number >= -99 && number <= 99))
 {

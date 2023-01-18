@@ -7,7 +7,7 @@
 
 Console.WriteLine("Введите пятизначное число");
 int number;
-while (!Int32.TryParse(Console.ReadLine(), out number) || number > 99999 || number < -99999 )
+while (!Int32.TryParse(Console.ReadLine(), out number) || number > 99999 || number < -99999 || (number >= -9999 && number <= 9999))
     {
     Console.WriteLine("Ввdод неверный. Пожалуйста, введите корректное число");
     }

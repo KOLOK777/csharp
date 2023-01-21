@@ -31,3 +31,12 @@ Console.WriteLine("Введите цифровую координату Z точ
 int BZ;
 while(!Int32.TryParse(Console.ReadLine(), out BZ))
     Console.WriteLine("Введено неверно. Введите цифровую координату Z точки B: ");
+
+void distance (){
+
+double Dist = Math.Sqrt(Math.Pow((BX-AX),2)+Math.Pow((BY-AY),2)+Math.Pow((BZ-AZ),2))
+
+return dist
+}
+
+distance (dist)

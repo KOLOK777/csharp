@@ -34,9 +34,9 @@ while(!Int32.TryParse(Console.ReadLine(), out BZ))
 
 void distance (){
 
-double Dist = Math.Sqrt(Math.Pow((BX-AX),2)+Math.Pow((BY-AY),2)+Math.Pow((BZ-AZ),2))
+double dist = Math.Round(Math.Sqrt(Math.Pow((BX-AX),2)+Math.Pow((BY-AY),2)+Math.Pow((BZ-AZ),2)), 2);
+Console.WriteLine($"A ({AX},{AY},{AZ}); B ({BX},{BY},{BZ}), -> {dist}")
 
-return dist
 }
 
-distance (dist)
+distance (dist);

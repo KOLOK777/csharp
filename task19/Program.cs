@@ -10,21 +10,26 @@ int number;
 while(!Int32.TryParse(Console.ReadLine(), out number) || (number < 10000 && number > -10000) || number >= 100000 || number <= -100000 )
     Console.WriteLine("Введено неверно. Введите пятизначное число: ");
 
-void Palindrom (int number){
-    bool test = true;
+void Palindrom (int number)
+    {
+    bool testTrue;
     int beforeMidDigit = number / 10000;
     int afterMidDigit = number % 10;
-    if (beforeMidDigit != afterMidDigit)
-        test = false;
-        return
-    int beforeMidDigit = number / 1000;
-    int beforeMidDigit = beforeMidDigit % 10;
-    int afterMidDigit = number % 100;
-    int afterMidDigit = afterMidDigit / 10;
-    if (beforeMidDigit != afterMidDigit)
-        test = false;
-        return 
-  
-}
+    if (beforeMidDigit == afterMidDigit)
+        {
+        beforeMidDigit = number / 1000;
+        beforeMidDigit = beforeMidDigit % 10;
+        afterMidDigit = number % 100;
+        afterMidDigit = afterMidDigit / 10;
+        }
+        if (beforeMidDigit == afterMidDigit)
+            testTrue = true;
+    else
+        testTrue = false;
+    }
 
 Palindrom (number);
+if (testTrue == true)
+    Console.WriteLine($"Веведено пятизначное число: {number}, это ПАЛИНДРОМ - 'да'");
+else
+    Console.WriteLine($"Веведено пятизначное число: {number}, это не палиндром - 'нет'");

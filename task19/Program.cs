@@ -26,11 +26,11 @@ void Palindrom (int number)
             testTrue = true;
     else
         testTrue = false;
+    if (testTrue == true)
+        Console.WriteLine($"Веведено пятизначное число: {number}, это палиндром - 'да'");
+    else
+        Console.WriteLine($"Веведено пятизначное число: {number}, это НЕ палиндром - 'нет'");
+    return;    
     }
     
 Palindrom (number);
-    
-if (testTrue == true)
-    Console.WriteLine($"Веведено пятизначное число: {number}, это палиндром - 'да'");
-else
-    Console.WriteLine($"Веведено пятизначное число: {number}, это НЕ палиндром - 'нет'");

@@ -26,6 +26,7 @@ void Palindrom (int number)
             testTrue = true;
     else
         testTrue = false;
+    return;
     }
 
 Palindrom (number);

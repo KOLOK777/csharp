@@ -4,18 +4,23 @@
 
 int number;
 int power;
-Console.WriteLine("Введите целое число, которое будем возводить в степень");
-while (!Int32.TryParse(Console.ReadLine(number), out number))
+Console.WriteLine("Введите целое число, которое будем возводить в степень :");
+while (!Int32.TryParse(Console.ReadLine(), out number))
     Console.WriteLine("Неверный ввод. Введите правильное целое число");
-Console.WriteLine($"Введите степень, в которую будем возводить число {number}");
-while (!Int32.TryParse(Console.ReadLine(), out power))
-    Console.WriteLine("Неверный ввод. Введите правильное целое число");
+Console.WriteLine($"Введите степень, в которую будем возводить число '{number}' (натуральное - целое неотрицательное число) :");
+while (!Int32.TryParse(Console.ReadLine(), out power) || power < 0)
+    Console.WriteLine("Неверный ввод. Введите правильное целое неотрицательное число");
 
-double raisedPower()
+void raisedPower()
     {
-    double result = Math.Pow(number, power);
-    Console.WriteLine($"Результат возвдения числа {number} в степень {power} : {result}");
-    return result;
+    int count;
+    double result = 1;
+    for (count = 1; count <= power; count ++)
+        {
+        result = result * number;
+        }
+    Console.WriteLine($"Результат возвдения числа '{number}' в степень '{power}' - {result}.");
+    return;
     }
 
-raisedPower ();
+raisedPower();

@@ -10,24 +10,30 @@ int[] array = new int[1];
 
 void SUM (int[] array)
     {
-    int i = 0;
-    int number2 = Math.Abs(number);
-    array[0] = number2 % 10;
-    int result = array[0];
-    number2 = number2 / 10;
-        Console.Write($"Перечень цифр: [ {array[0]}");
-    for (i = 1; number2 > 0; i++)
-        {
-        array = new int[array.Length + 1];
-        array[i] = number2 % 10;
-        number2 = number2 / 10;
-        result = result + array[i];
-        Console.Write($", {array[i]}");
+    if (number % 10 == 0){
+        Console.WriteLine("Сумма цифр в вашем числе: 1");
         }
-    Console.Write(" ]");
-    Console.WriteLine();
-    Console.WriteLine($"Сумма цифр в вашем числе: {result}");
-    return;    
+    else 
+        {
+        int i = 0;
+        int number2 = Math.Abs(number);
+        array[0] = number2 % 10;
+        int result = array[0];
+        number2 = number2 / 10;
+            Console.Write($"Перечень цифр: [ {array[0]}");
+        for (i = 1; number2 > 0; i++)
+            {
+            array = new int[array.Length + 1];
+            array[i] = number2 % 10;
+            number2 = number2 / 10;
+            result = result + array[i];
+            Console.Write($", {array[i]}");
+            }
+        Console.Write(" ]");
+        Console.WriteLine();
+        Console.WriteLine($"Сумма цифр в вашем числе: {result}");    
+    }
+    return;
     }
 
 SUM (array);
